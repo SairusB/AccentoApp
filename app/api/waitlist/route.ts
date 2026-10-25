@@ -33,9 +33,10 @@ export async function POST(request: Request) {
   }
 
   try {
+    // Sent as plain text on purpose: Apps Script answers with a redirect, and
+    // following it fails with 404 if the request was labelled application/json.
     const res = await fetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ ...signup, secret, source: "homepage" }),
     });
     const result = (await res.json()) as { ok?: boolean };
