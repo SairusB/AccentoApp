@@ -1,4 +1,4 @@
-const languages = ["Bengali", "Hindi", "Tamil", "Telugu", "Marathi", "Gujarati", "Kannada", "Malayalam"];
+const languages = ["Bengali", "Tamil", "Telugu", "Kannada", "Malayalam"];
 
 export default function FirstLanguage() {
   return (
@@ -14,20 +14,17 @@ export default function FirstLanguage() {
             ways that follow patterns. Once you know the pattern, practice gets a lot shorter.
           </p>
           <p className="mt-4 leading-7 text-white/75">
-            We&apos;re starting with Bengali. Every explanation is checked by native speakers and
-            language experts before it reaches you.
+            Every explanation is checked by native speakers and language experts before it
+            reaches you.
           </p>
         </div>
         <ul className="flex flex-wrap gap-2.5" aria-label="Languages">
-          {languages.map((lang, i) => (
+          {languages.map((lang) => (
             <li
               key={lang}
-              className={`rounded-full px-4 py-2 text-sm font-medium ${
-                i === 0 ? "bg-violet text-white" : "border border-white/15 text-white/60"
-              }`}
+              className="rounded-full border border-white/25 px-4 py-2 text-sm font-medium text-white"
             >
               {lang}
-              {i === 0 ? " · first" : ""}
             </li>
           ))}
           <li className="rounded-full border border-dashed border-white/20 px-4 py-2 text-sm text-white/50">

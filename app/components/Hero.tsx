@@ -1,8 +1,10 @@
+// Violet = clarity track, peach = fun track. Alternated so both still show
+// when a narrow phone screen cuts the rail off.
 const accents = [
-  { name: "General American", status: "Opening first", live: true },
-  { name: "British RP", status: "Soon", live: false },
-  { name: "Scottish", status: "Soon", live: false },
-  { name: "Irish", status: "Soon", live: false },
+  { name: "General American", track: "clarity" },
+  { name: "French accent", track: "fun" },
+  { name: "British RP", track: "clarity" },
+  { name: "Irish", track: "fun" },
 ];
 
 function AccentRail() {
@@ -10,7 +12,7 @@ function AccentRail() {
     <div className="relative pt-3">
       {/* the rail the accents hang from */}
       <div className="absolute inset-x-2 top-3 h-1 rounded-full bg-ink/80" />
-      <ul className="relative flex gap-3 overflow-hidden">
+      <ul className="relative flex gap-2 overflow-hidden sm:gap-3">
         {accents.map((a, i) => (
           <li
             key={a.name}
@@ -19,16 +21,13 @@ function AccentRail() {
           >
             <span className="h-4 w-0.5 bg-ink/70" />
             <span
-              className={`rounded-2xl border px-4 py-3 text-left shadow-sm ${
-                a.live
+              className={`rounded-2xl border px-3 py-2.5 font-display text-xs font-semibold shadow-sm sm:px-4 sm:py-3 sm:text-sm ${
+                a.track === "clarity"
                   ? "border-violet bg-violet text-white"
-                  : "border-line bg-surface text-ink"
+                  : "border-peach bg-peach-soft text-ink"
               }`}
             >
-              <span className="block font-display text-sm font-semibold">{a.name}</span>
-              <span className={`block text-xs ${a.live ? "text-white/80" : "text-muted"}`}>
-                {a.status}
-              </span>
+              {a.name}
             </span>
           </li>
         ))}
@@ -91,16 +90,12 @@ export default function Hero() {
       />
       <div className="relative mx-auto grid max-w-6xl grid-cols-1 items-center gap-12 px-4 pt-14 pb-20 sm:px-6 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] lg:pt-24 lg:pb-28">
         <div>
-          <p className="inline-flex items-center gap-2 rounded-full border border-line bg-surface px-3 py-1 text-xs font-medium text-muted">
-            <span className="h-1.5 w-1.5 rounded-full bg-mint" />
-            Early access · Bengali speakers first
-          </p>
-          <h1 className="mt-5 font-display text-5xl leading-[1.02] font-bold tracking-tight sm:text-6xl lg:text-7xl">
+          <h1 className="font-display text-5xl leading-[1.02] font-bold tracking-tight sm:text-6xl lg:text-7xl">
             Accents are cloaks. <span className="whitespace-nowrap text-violet">Try one on.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-8 text-muted">
-            Accento helps you speak clear English in the accent you choose, starting from the
-            language you grew up with. Your voice stays yours. The cloak is up to you.
+            Speak clear English in an accent you choose, and get pointers on phonetic improvements
+            based on your style of speaking.
           </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <a

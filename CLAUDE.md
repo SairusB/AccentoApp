@@ -38,6 +38,7 @@ content/        sentences and pattern cards (JSON)
 - **Desktop and mobile:** the homepage is mostly seen on desktop; the practice flow will mostly be used on phones. Check every page at desktop width and at 375px.
 - **Copy voice:** crisp, warm, a bit playful. The core idea is "accents are like cloaks: keep your voice, try on whichever accent you want." Vary sentence and headline shapes; not every headline needs to be punchy. Avoid copy that reads as AI-written: no "unlock / elevate / seamless / supercharge", no "Whether you're X or Y", no stacks of three-word slogans, no "It's not X, it's Y" formulas, no em-dash-heavy rhythm. Never make users feel bad about how they speak, and never call it speaking "properly".
 - **Waitlist privacy:** emails go only to the Google Sheet. Say so next to the form.
+- **Homepage shows the whole product:** both tracks (clarity and fun accents) get equal space; it can say the clarity track opens first. Don't single out Bengali in public copy (V1 testing with Bengali speakers is internal); the languages shown are Bengali, Tamil, Telugu, Kannada and Malayalam, none highlighted.
 - **Small steps:** one feature at a time, commit after each working step, short clear commit messages.
 - **Ask before:** adding dependencies, changing the stack, or expanding scope beyond `PLAN.md`.
 - **Keep it simple:** this is a prototype. Prefer the plain solution over a clever or scalable one.

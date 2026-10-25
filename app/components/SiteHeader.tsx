@@ -1,7 +1,7 @@
 export function Wordmark() {
   return (
     <span className="font-display text-2xl font-bold tracking-tight">
-      accento<span className="text-violet">.</span>
+      Accento<span className="text-violet">.</span>
     </span>
   );
 }

@@ -5,11 +5,15 @@ const steps = [
   },
   {
     title: "See which sounds drifted",
-    body: "Accento marks the sounds that landed away from your target accent and explains why your first language pulls them that way.",
+    body: "Accento marks the sounds that landed away from your target accent and explains why your first language pulls them that way. Powered by insights from linguistic experts.",
   },
   {
     title: "Take it again",
     body: "Record a second take straight away and hear the two side by side. Small changes are easier to hear than you'd think.",
+  },
+  {
+    title: "Enrol in small, bite-sized sessions",
+    body: "Enrol in our expert-designed, AI-assisted learning paths and start speaking with confidence.",
   },
 ];
 
@@ -20,7 +24,7 @@ export default function HowItWorks() {
         <h2 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
           How a session goes
         </h2>
-        <ol className="mt-10 grid gap-8 md:grid-cols-3 md:gap-6">
+        <ol className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
           {steps.map((step, i) => (
             <li key={step.title} className="flex flex-col">
               <span className="grid h-10 w-10 place-items-center rounded-full bg-violet/10 font-display font-bold text-violet-strong">
@@ -31,7 +35,11 @@ export default function HowItWorks() {
             </li>
           ))}
         </ol>
-        <p className="mt-12 flex items-center gap-2 text-sm text-muted">
+        <p className="mt-12 max-w-3xl leading-7 text-ink">
+          Language is the most primitive form of communication, and all our curriculums are
+          designed by real humans (who&apos;ve also written the copy on this website ;)).
+        </p>
+        <p className="mt-4 flex items-center gap-2 text-sm text-muted">
           <svg viewBox="0 0 24 24" className="h-4 w-4 shrink-0 text-violet-strong" fill="currentColor" aria-hidden="true">
             <path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3Zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.6-4.6 1.4 1.4-6 6Z" />
           </svg>
