@@ -40,3 +40,7 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scoring spike: recordings, speaker details and results stay local
+/spike/audio/
+/spike/results/

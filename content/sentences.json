@@ -1,0 +1,101 @@
+{
+  "_about": "Draft practice sentences, first used for the scoring spike. Each targets one of the unverified Bengali hypotheses in PLAN.md (patternId). Drafted by Claude; not reviewed. Keep validated: false until a linguist or knowledgeable native speaker checks the sentence and its target words.",
+  "sentences": [
+    {
+      "id": "s01",
+      "text": "We visited the village very early on Wednesday.",
+      "patternId": "v-w",
+      "targetWords": ["We", "visited", "village", "very", "Wednesday"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s02",
+      "text": "Will you review the video with Victor?",
+      "patternId": "v-w",
+      "targetWords": ["Will", "review", "video", "with", "Victor"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s03",
+      "text": "The school is a short walk from the station.",
+      "patternId": "s-cluster",
+      "targetWords": ["school", "station"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s04",
+      "text": "She spoke slowly at the start of the speech.",
+      "patternId": "s-cluster",
+      "targetWords": ["spoke", "slowly", "start", "speech"],
+      "difficulty": 2,
+      "validated": false
+    },
+    {
+      "id": "s05",
+      "text": "I think three of them will be there this Thursday.",
+      "patternId": "th",
+      "targetWords": ["think", "three", "them", "there", "this", "Thursday"],
+      "difficulty": 2,
+      "validated": false
+    },
+    {
+      "id": "s06",
+      "text": "Thank you for the thoughtful feedback.",
+      "patternId": "th",
+      "targetWords": ["Thank", "the", "thoughtful"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s07",
+      "text": "Pass me the pen, not the pan.",
+      "patternId": "ae-e",
+      "targetWords": ["Pass", "pen", "pan"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s08",
+      "text": "Ben had a bad cold, so he left his bag at home.",
+      "patternId": "ae-e",
+      "targetWords": ["Ben", "had", "bad", "left", "bag"],
+      "difficulty": 2,
+      "validated": false
+    },
+    {
+      "id": "s09",
+      "text": "I asked him to send the last report.",
+      "patternId": "word-endings",
+      "targetWords": ["asked", "send", "last", "report"],
+      "difficulty": 2,
+      "validated": false
+    },
+    {
+      "id": "s10",
+      "text": "The plan worked, and the team helped a lot.",
+      "patternId": "word-endings",
+      "targetWords": ["plan", "worked", "team", "helped", "lot"],
+      "difficulty": 2,
+      "validated": false
+    },
+    {
+      "id": "s11",
+      "text": "Today the doctor told us to wait outside.",
+      "patternId": "retroflex-t-d",
+      "targetWords": ["Today", "doctor", "told", "wait", "outside"],
+      "difficulty": 1,
+      "validated": false
+    },
+    {
+      "id": "s12",
+      "text": "Did you add the data to the second draft?",
+      "patternId": "retroflex-t-d",
+      "targetWords": ["Did", "add", "data", "second", "draft"],
+      "difficulty": 1,
+      "validated": false
+    }
+  ]
+}
