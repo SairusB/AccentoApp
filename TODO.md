@@ -13,7 +13,7 @@
 
 ## Build
 - [x] Scaffold Next.js + TypeScript + Tailwind, init git, first commit
-- [ ] Deploy blank page to Vercel
+- [x] Deploy blank page to Vercel (https://accento-one.vercel.app)
 - [ ] Write 15-20 practice sentences in `content/sentences.json`
 - [ ] Write Bengali pattern cards in `content/patterns/bengali.json` (validated: false)
 - [ ] Onboarding screen (language + accent, only Bengali / General American enabled)
