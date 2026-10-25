@@ -22,9 +22,12 @@ Find out whether a small group of real Bengali speakers finds the feedback (a) a
 5. Results screen: show which sounds were off, and for each, a **pattern card** explaining the mother-tongue reason and one thing to try. Offer an immediate re-record.
 6. A simple before/after view for the same sentence (attempt 1 vs attempt 2).
 7. Deploy so testers can open a link on their phone.
+8. **Homepage with waitlist** (added 2026-10-25): sells the idea, explains how it works, and collects waitlist signups (email, which track, optional first language) into a Google Sheet. Shows two tracks:
+   - **Track 1, live first:** clear English in a target accent, for work and study (Bengali → General American).
+   - **Track 2, "coming soon":** trying on accents for fun (e.g. Scottish, Irish). Not built in V1; the waitlist measures interest.
 
 ## Not in V1
-Accounts and login, payments, other languages, other target accents, a "fun mode" (French/Italian-style accents), detecting the speaker's region from their voice, AI conversation partner, native mobile apps, streaks and gamification, B2B features, saving recordings.
+Accounts and login, payments, other languages, other target accents, a working "fun mode" (only teased on the homepage as coming soon), detecting the speaker's region from their voice, AI conversation partner, native mobile apps, streaks and gamification, B2B features, saving recordings.
 
 ## Content model
 - `content/sentences.json`: id, text, target sounds, difficulty

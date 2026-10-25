@@ -12,6 +12,9 @@
 - [ ] Decide: go, adjust, or rethink scoring
 
 ## Build
+- [x] Homepage: hero, two tracks, how it works, first-language section (Lilac sky design)
+- [x] Waitlist form + /api/waitlist endpoint (email, track, optional first language)
+- [ ] Connect waitlist to Google Sheet (docs/WAITLIST_SETUP.md) and add env vars on Vercel
 - [x] Scaffold Next.js + TypeScript + Tailwind, init git, first commit
 - [x] Deploy blank page to Vercel (https://accento-one.vercel.app)
 - [ ] Write 15-20 practice sentences in `content/sentences.json`

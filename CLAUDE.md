@@ -10,7 +10,7 @@ V1 is a **validation prototype**, not a product: one mother tongue (Bengali), on
 - Audio capture in the browser with MediaRecorder
 - Pronunciation scoring: Azure AI Speech pronunciation assessment is the first candidate, to be confirmed in the scoring spike (see `PLAN.md`). Keep every provider behind a small interface in `lib/scoring/` so it can be swapped.
 - Lesson content as JSON files in `/content` (no database in V1)
-- No auth, no payments, no database in V1
+- No auth, no payments, no database in V1. The one exception: waitlist signups (email, track, optional first language) are sent from `app/api/waitlist/route.ts` to a Google Sheet through a Google Apps Script web app (setup in `docs/WAITLIST_SETUP.md`).
 - Deploy on Vercel
 
 ## Commands
@@ -24,7 +24,8 @@ Next.js 16 may differ from what you remember. Check `node_modules/next/dist/docs
 
 ## Project structure (target)
 ```
-app/            pages and UI
+app/            pages and UI (app/api/ for server endpoints)
+app/components/ homepage sections and shared UI
 lib/scoring/    scoring provider interface + implementations
 content/        sentences and pattern cards (JSON)
 ```
@@ -34,7 +35,9 @@ content/        sentences and pattern cards (JSON)
 - **Framing:** use "clarity" and "target accent". Never frame a mother-tongue accent as a defect or something to "fix" or "remove" in UI copy.
 - **Privacy:** user audio is processed and discarded. Do not persist recordings or send them anywhere except the scoring provider. Tell users this on the record screen.
 - **Secrets:** API keys go in `.env.local` only. Never hardcode or commit them. Keep `.env.example` with variable names and no values.
-- **Mobile first:** testers will mostly use phones. Check layouts at narrow widths.
+- **Desktop and mobile:** the homepage is mostly seen on desktop; the practice flow will mostly be used on phones. Check every page at desktop width and at 375px.
+- **Copy voice:** crisp, warm, a bit playful. The core idea is "accents are like cloaks: keep your voice, try on whichever accent you want." Vary sentence and headline shapes; not every headline needs to be punchy. Avoid copy that reads as AI-written: no "unlock / elevate / seamless / supercharge", no "Whether you're X or Y", no stacks of three-word slogans, no "It's not X, it's Y" formulas, no em-dash-heavy rhythm. Never make users feel bad about how they speak, and never call it speaking "properly".
+- **Waitlist privacy:** emails go only to the Google Sheet. Say so next to the form.
 - **Small steps:** one feature at a time, commit after each working step, short clear commit messages.
 - **Ask before:** adding dependencies, changing the stack, or expanding scope beyond `PLAN.md`.
 - **Keep it simple:** this is a prototype. Prefer the plain solution over a clever or scalable one.
