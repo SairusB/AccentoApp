@@ -3,7 +3,7 @@
 ## Before building
 - [ ] Confirm assumptions in PLAN.md (ICP, Bengali, General American)
 - [ ] Find someone to validate Bengali content (linguist or knowledgeable native speakers)
-- [ ] Create Azure Speech account and API key (store in `.env.local`)
+- [x] Create Azure Speech account and API key (store in `.env.local`)
 
 ## Scoring spike (gate)
 - [ ] Record test sentences: 2-3 Bengali speakers + 2-3 General American baseline speakers
